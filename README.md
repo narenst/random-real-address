@@ -15,7 +15,7 @@ Generate random, realistic addresses from a curated list. This Python library al
 
 You can install the package via pip:
 
-```bash
+```
 pip install random-address-generator
 ```
 
