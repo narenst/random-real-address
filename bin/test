@@ -6,4 +6,5 @@ if [ -z "${VIRTUAL_ENV}" ] && [ -r .venv ]; then
     source .venv/bin/activate
 fi
 
+black random_address tests
 pytest .
