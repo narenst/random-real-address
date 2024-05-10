@@ -19,5 +19,10 @@ dev = [
     "pytest==8.2.0",
 ]
 
+build = [
+    "build==1.2.1",
+    "twine==5.0.0",
+]
+
 [tool.setuptools.packages.find]
 where = ["random_address"]

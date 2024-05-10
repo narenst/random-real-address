@@ -12,4 +12,4 @@ fi
 pip3 install --disable-pip-version-check wheel
 
 # Install dependencies in editable mode
-pip3 install --disable-pip-version-check --editable '.[dev]'
+pip3 install --disable-pip-version-check --editable '.[dev,build]'
