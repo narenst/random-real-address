@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "random-real-address"
+version = "0.1.0"
+description = "A Python package to generate real addresses in the US."
+authors = [{name = "Naren Thiagarajan", email = "narenst@gmail.com"}]
+license = {text = "MIT License"}
+dependencies = []
+
+[project.optional-dependencies]
+
+dev = [
+    "pytest==6.2.4",
+    "flake8==3.9.2",
+    "black==21.9b0",
+]
+
+[tool.setuptools.packages.find]
+where = ["random_address"]

@@ -1,0 +1,15 @@
+#!/bin/bash
+set -e
+set -o pipefail
+
+if [ -z "${VIRTUAL_ENV}" ]; then
+    # Create a local virtualenv if one does not exist
+    test -d .venv || python3 -m venv .venv --prompt random-real-addresses
+    source .venv/bin/activate
+fi
+
+# We need wheel to install any binary packagess
+pip3 install --disable-pip-version-check wheel
+
+# Install dependencies in editable mode
+pip3 install --disable-pip-version-check --editable '.[dev]'

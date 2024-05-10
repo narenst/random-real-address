@@ -1,0 +1,9 @@
+#!/bin/bash
+set -e
+set -o pipefail
+
+if [ -z "${VIRTUAL_ENV}" ] && [ -r .venv ]; then
+    source .venv/bin/activate
+fi
+
+pytest .
