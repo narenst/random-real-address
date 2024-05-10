@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "random-real-address"
-version = "0.1.1"
+version = "0.1.2"
 description = "A Python package to generate real addresses in the US."
 authors = [{name = "Naren Thiagarajan", email = "narenst@gmail.com"}]
 license = {text = "MIT License"}
