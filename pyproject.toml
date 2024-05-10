@@ -13,9 +13,10 @@ dependencies = []
 [project.optional-dependencies]
 
 dev = [
-    "pytest==6.2.4",
-    "flake8==3.9.2",
-    "black==21.9b0",
+    "black==24.4.2",
+    "flake8==7.0.0",
+    "ipython==8.24.0",
+    "pytest==8.2.0",
 ]
 
 [tool.setuptools.packages.find]
